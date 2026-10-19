@@ -2,7 +2,7 @@
 
 **Type:** Independent project  
 **Environment:** Fedora Linux 44 workstation  
-**Date:** 19 October 2026
+
 
 ## Overview
 This project practises foundational endpoint-security tasks on a personal Fedora Linux workstation: baseline inspection, listening-service review, basic service hardening, firewall-rule review, and verification.
@@ -19,7 +19,7 @@ Work was limited to the user's own laptop. No third-party systems were scanned o
 
 ## Baseline
 - Fedora Linux 44.
-- Wi-Fi interface `wlo1` was up with private address `10.183.183.95/24`; default gateway `10.183.183.121`.
+-  Wi-Fi interface `wlo1` was active during the assessment. Private IP and gateway details are omitted for privacy.
 - Approximately 7.6 GiB RAM and 352 GB free on the root filesystem at inspection time.
 - Active zone: `FedoraWorkstation`.
 - Initial firewall allowed services `dhcpv6-client`, `samba-client`, `ssh`, plus TCP and UDP ports `1025–65535`.
@@ -71,16 +71,6 @@ Save the final firewall output as `firewall-after.txt` in the evidence folder if
 - A broad firewall rule does not prove compromise.
 - Capture evidence before and after changes and document limitations honestly.
 
-## Next steps
-1. Preserve final firewall output.
-2. Review system logs and distinguish routine messages from security-relevant evidence.
-3. Decide whether PostgreSQL is still needed before disabling it.
-4. Review SSH, Samba client functionality, Avahi, `wsdd`, and CUPS based on actual use.
-5. Publish sanitized evidence only; remove unnecessary private details.
 
-## CV entry
-**Linux Endpoint Security & Hardening Lab — Independent Project**
-- Assessed Fedora Linux network configuration, listening sockets, and firewall rules.
-- Identified unnecessary network-facing services and broad port allowances.
-- Stopped and disabled unused Apache and MariaDB services and applied local firewall hardening.
-- Documented evidence, remediation, verification, and limitations.
+
+
